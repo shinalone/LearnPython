@@ -149,7 +149,7 @@
     str1.strip(); str1.lstrip(); str1.rstrip(); str1.strip('d'); str1.lstrip('d'); str1.rstrip('d')
     str1.startswith('start')                # 是否以start开头
     str1.endswith('end')                    # 是否以end结尾
-    str1.isalnum(); str1.isalpha(); str1.isdigit(); str1.islower(); str1.isupper()      # 判断字符串是否全为字符、数字、大写、小写
+    str1.isalnum(); str1.isalpha(); str1.isdigit(); str1.islower(); str1.isupper()      # 判断字符串是否全为字母或数字、字母、数字、小写、大写
 
 #-- 三重引号编写多行字符串块，并且在代码折行处嵌入换行字符\n
     mantra = """hello world
