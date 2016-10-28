@@ -287,7 +287,7 @@
 #-- 文件基本操作
     output = open(r'C:\spam', 'w')          # 打开输出文件，用于写
     input = open('data', 'r')               # 打开输入文件，用于读。打开的方式可以为'w', 'r', 'a', 'wb', 'rb', 'ab'等
-    fp.read([size])                         # size为读取的长度，以byte为单位
+    fp.read([size])                         # size为读取的长度，以byte为单位；Python3.x：pf.read(int),下同
     fp.readline([size])                     # 读一行，如果定义了size，有可能返回的只是一行的一部分
     fp.readlines([size])                    # 把文件每一行作为一个list的一个成员，并返回这个list。其实它的内部是通过循环调用readline()来实现的。如果提供size参数，size是表示读取内容的总长。
     fp.readable()                           # 是否可读
