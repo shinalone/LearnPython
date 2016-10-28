@@ -293,7 +293,7 @@
     fp.readable()                           # 是否可读
     fp.write(str)                           # 把str写到文件中，write()并不会在str后加上一个换行符
     fp.writelines(seq)                      # 把seq的内容全部写到文件中(多行一次性写入)
-    fp.writeable()                          # 是否可写
+    fp.writable()                          # 是否可写
     fp.close()                              # 关闭文件。
     fp.flush()                              # 把缓冲区的内容写入硬盘
     fp.fileno()                             # 返回一个长整型的”文件标签“
@@ -436,7 +436,7 @@
 #-- 手动迭代：iter和next
     L = [1, 2]
     I = iter(L)                        # I为L的迭代器
-    I.next()                           # 返回1
+    I.next()                           # 返回1，Python3.x: next(I)
     I.next()                           # 返回2
     I.next()                           # Error:StopIteration
     
